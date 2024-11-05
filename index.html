@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+<!--   <link rel="icon" href="./static/images/favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -44,7 +44,7 @@
           </span>
         </a>
 
-        <div class="navbar-item has-dropdown is-hoverable">
+<!--         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             Additional Resources
           </a>
@@ -59,7 +59,7 @@
               </a>
             
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </nav>
@@ -74,24 +74,24 @@
             <div class="is-size-5 publication-authors">
               
                 <span class="author-block">
-                  <a href="https://nickyfot.github.io">Niki Foteinopoulou</a><sup>['unilu']</sup>
+                  <a href="https://nickyfot.github.io">Niki Foteinopoulou</a><sup>['1']</sup>
                 </span>
               
                 <span class="author-block">
-                  <a href="">Enjie Ghorbel</a><sup>['unilu', 'cristal']</sup>
+                  <a href="">Enjie Ghorbel</a><sup>['1', '2']</sup>
                 </span>
               
                 <span class="author-block">
-                  <a href="">Djamila Aouada</a><sup>['unilu']</sup>
+                  <a href="">Djamila Aouada</a><sup>['1']</sup>
                 </span>
               
             </div>
 
             <div class="is-size-5 publication-authors">
               
-                <span class="author-block"><sup>unilu</sup>CVI2, SnT, University of Luxembourg</span>
+                <span class="author-block"><sup>1</sup>CVI2, SnT, University of Luxembourg</span>
               
-                <span class="author-block"><sup>cristal</sup>Cristal Laboratory, National School of Computer Sciences, University of Manouba</span>
+                <span class="author-block"><sup>2</sup>Cristal Laboratory, National School of Computer Sciences, University of Manouba</span>
               
             </div>
 
@@ -257,13 +257,13 @@
           <div class="block content has-text-justified">
             
             
-              <div class="block center-media">
+<!--               <div class="block center-media">
                 
                   
                     <img src="./static/images/interpolate_start.jpg">
                   
                 
-              </div>
+              </div> -->
             
           </div>
           
@@ -274,7 +274,7 @@
                   
                   
                     <p>Robustness to different prompts: We use seven synonyms for the positive class: ``manipulated'', ``deepfake'', ``synthetic'', ``altered'', ``fabricated'', ``face forgery''  and ``falsified''. As the binary task is simple and the instruction format is a `Yes' or `No' question, we use EM as a matching approach in this evaluation. We see the performance of each tested model under the binary detection setting on the two sub-sets of SeqDeepFake and the R-splicer dataset using the three best performing synonyms: ``manipulated'', ``synthetic'' and ``altered''. The first observation is that no VLLM clearly outperforms others across all datasets and metrics. However, we see that BLIP-2 has the most robust performance to the given instruction, even though it is the smallest in terms of parameters. Furthermore,  the additional parameters of T5-xxl do not seem to aid the task compared to the base InstructBLIP with T5 generator, as the base model performs comparably better across most benchmarks. We theorise that as the VLLMs have not been explicitly trained on image-language pairs of manipulated images, a large number of parameters on the language generation leads to more hallucinations for this simple but abstract task. Compared to the CLIP, models appear to have competitive performance with the exception of InstructBLIP with T5xxl LLM. When both base models, i.e. BLIP-2 and LlaVa, have relatively good performance, the ensemble shows marginal improvement, particularly in terms of Accuracy and F1; however, this is not consistent therefore we do not continue the investigation to fine-grained labels. The detailed performance of all models and synonyms across all datasets and additional analysis on CLIP features can be found in the Appendix.</p>
-                    <div class="block center-media">
+<!--                     <div class="block center-media">
                       
                         
                           
@@ -282,7 +282,7 @@
                           
                         
                       
-                    </div>
+                    </div> -->
                   
                     <p>Overall model performance: We average the performance of the three best-performing synonyms on all nine benchmarks in [?]. No model clearly outperforms others across all metrics and datasets; however, we can observe competitive performance from BLIP-2 on the binary task, even though it is the smallest model in terms of parameters. We also see that all models struggle with the more challenging in-the-wild datasets, such as CelebDF, which highlights the need for further development to achieve adequate generalisation. Performance of GPT4v should be treated as an upper bound as we cannot assess whether the model has been trained on samples of the selected datasets. We see that GPT4v vastly outperforms the selected VLLMs on three benchmarks and has comparable performance on the rest, with the exception of FF++.</p>
                     <div class="block center-media">
